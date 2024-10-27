@@ -46,14 +46,10 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'testapp',
 
-#     ==
-    'whitenoise.runserver_nostatic',
-    # your apps here
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware',  # Add whitenoise
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -152,6 +148,3 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
-# Enable WhiteNoise to serve compressed files and support caching.
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
