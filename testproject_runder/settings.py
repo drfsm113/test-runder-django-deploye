@@ -108,7 +108,8 @@ DATABASES = {
         'PORT': '5432',
     }
 }
-DATABASES['default']=dj_database_url.parse("postgresql://test_db_b7li_user:bTmv1hxqtWx33kG7WU3CxHcITQptXKbQ@dpg-csf1li0gph6c73euq98g-a.oregon-postgres.render.com/test_db_b7li")
+DATABASES['default']=dj_database_url.parse("postgresql://test_db_b7li_user:bTmv1hxqtWx33kG7WU3CxHcITQptXKbQ@dpg-csf1li0gph6c73euq98g-a/test_db_b7li")
+# DATABASES['default']=dj_database_url.parse("postgresql://test_db_b7li_user:bTmv1hxqtWx33kG7WU3CxHcITQptXKbQ@dpg-csf1li0gph6c73euq98g-a.oregon-postgres.render.com/test_db_b7li")
 # Replace the SQLite DATABASES configuration with PostgreSQL:
 # DATABASES = {
 #     'default': dj_database_url.config(
